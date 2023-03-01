@@ -1,0 +1,10 @@
+module TIEX {
+    function init(hey, sup) {
+        // bu bir commenttir xd
+        File.stream!("/Users/fabsolutely/dev/elixir/tiex/lib/file.tiex")
+        ~> Stream.with_index()
+        ~> Stream.map(({line,index})->line)
+        ~> Stream.run(30.75)
+        ~> IO.puts()
+    }
+}
